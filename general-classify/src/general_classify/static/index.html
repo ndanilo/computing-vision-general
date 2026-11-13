@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>general-classify — webcam</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Webcam Detection</h1>
+      <p class="subtitle">
+        Capture frames from your camera and run model inference on the server.
+      </p>
+    </header>
+
+    <main>
+      <p class="info-link" id="https-hint" hidden>
+        Phone cameras require HTTPS (use a tunnel you trust; this app does not set one up).
+      </p>
+
+      <div class="viewer" id="viewer">
+        <video id="video" playsinline muted autoplay></video>
+        <canvas id="overlay"></canvas>
+      </div>
+
+      <div class="controls">
+        <button type="button" id="btn-start">Start</button>
+        <button type="button" id="btn-stop" disabled>Stop</button>
+        <button type="button" id="btn-switch" disabled>Switch camera</button>
+      </div>
+
+      <p class="status" id="status">Idle</p>
+
+      <section class="detections">
+        <h2>Detections</h2>
+        <ul id="detection-list"></ul>
+      </section>
+    </main>
+
+    <canvas id="capture" hidden></canvas>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

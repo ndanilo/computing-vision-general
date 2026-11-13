@@ -54,7 +54,7 @@ computational-vision-studies/
 
 | Study | Description | Stack |
 | ----- | ----------- | ----- |
-| _coming soon_ | | |
+| [general-classify](./general-classify) | YOLO26 webcam object detection over WebSocket | Python (FastAPI, Ultralytics), static HTML/JS |
 
 ## Getting started
 

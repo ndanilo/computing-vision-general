@@ -7,7 +7,11 @@ authors = [
     { name = 'LAPTOP-DDF85KV4\danil', email = "danilo.novais@bairesdev.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "fastapi>=0.162.7",
+    "ultralytics>=8.4.212",
+    "uvicorn[standard]>=0.54.0",
+]
 
 [project.scripts]
 general-classify = "general_classify.main:main"
